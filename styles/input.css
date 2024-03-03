@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100dvh;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+.main-container {
+    min-width: 25rem;
+    min-height: 38rem;
+    background-color: hsl(0, 0%, 15%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.display-box {
+    width: 23rem;
+    height: 5rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    font-size: 3rem;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.deg {
+    font-size: 0.6rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+
+.input-box {
+    min-width: 22rem;
+    min-height: 18rem;
+    border: 1px solid gray;
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.numbers {
+    display: grid;
+    flex-basis: 85%;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.6rem 1.5rem;
+    line-height: 1;
+    gap: 2.5rem;
+    width: 17rem;
+}
+
+
+
+
+.operators {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+    border: 1px solid gray;
+    padding: 1rem 1.5rem;
+    line-height: 0.5;
+    gap: 2.5rem;
+
+}
+
+.operator-btn {
+    background-color: orange;
+    transition: all 0.03s ease;
+}
+
+.operator-btn:active {
+    background-color: rgb(248, 178, 47);
+}
+
+.operator-btn:hover {
+    background-color: rgb(248, 178, 47);
+}
+
+.alpha-btn {
+    background-color: rgb(190, 182, 182);
+    transition: all 0.03s ease;
+}
+
+.alpha-btn:active {
+    background-color: hsl(0, 0%, 68%);
+}
+
+.alpha-btn:hover {
+    background-color: hsl(0, 0%, 68%);
+}
+
+button {
+    all: unset;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 38%);
+    transition: all 0.03s ease-in-out;
+}
+
+button:active {
+    background-color: rgb(133, 127, 127);
+}
+
+button:hover {
+    background-color: rgb(133, 127, 127);
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    body {
+        background: pink;
+    }
+}
